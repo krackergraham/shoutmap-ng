@@ -1,4 +1,6 @@
-// public/js/services/ShoutService.js
+/**
+ * ReplyService is referenced as 'Replies' by requesting modules
+ * */
 angular.module('ReplyService', []).factory('Replies', ['$http', function ($http) {
     return {
         // call to get all replies for a shout

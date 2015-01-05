@@ -4,7 +4,7 @@ var mongoose = require('mongoose'),
 module.exports = {
     connect: function () {
         // Get the db url depending on environment and connect to it
-        var dbUrl = process.env.NODE_ENV === "production" ? process.env.MONGOHQ_URL : 'mongodb://localhost/shoutmap';
+        var dbUrl = process.env.NODE_ENV === "production" ? process.env.MONGOHQ_URL : 'mongodb://localhost/shoutmapV2';
         console.log('Connecting to MongoDB at: ' + dbUrl);
         mongoose.connect(dbUrl);
 

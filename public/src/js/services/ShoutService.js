@@ -1,4 +1,6 @@
-// public/js/services/ShoutService.js
+/**
+ * ShoutService is referenced as 'Shouts' by requesting modules
+ * */
 angular.module('ShoutService', []).factory('Shouts', ['$http', function ($http) {
     return {
         // call to get all shouts

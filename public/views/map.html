@@ -1,0 +1,21 @@
+<ui-gmap-google-map
+        center="map.center"
+        zoom="map.zoom"
+        options="map.options">
+    <ui-gmap-markers models="shouts"
+                     coords="'coords'"
+                     click="'onClick'">
+        <ui-gmap-windows ng-cloak show="show" closeClick="'show'">
+            <div ng-non-bindable>
+                {{text}}
+            </div>
+            <div ng-controller="ShoutController">
+                <ul>
+                    <li ng-repeat="reply in replies">
+                        <p>{{reply.text}}</p>
+                    </li>
+                </ul>
+            </div>
+        </ui-gmap-windows>
+    </ui-gmap-markers>
+</ui-gmap-google-map>

@@ -1,7 +1,8 @@
 angular.module('shoutApp', [
     'ngRoute',
     'appRoutes',
-    'MainCtrl',
+    'MapCtrl',
+    'ShoutCtrl',
     'ShoutService',
     'ReplyService'
 ]);
